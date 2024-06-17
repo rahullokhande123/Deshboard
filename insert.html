@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            #form-container{
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+                width: 60%;
+                margin: 120px 280px ;
+            }
+            #form-container h2 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            #form-container label{
+                display: block;
+                margin-bottom: 8px;
+                font-weight: bold; /* Bold Krne Ke Liye */
+            }
+            #form-container input[type="text"]{
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box; /* esse ye box ke ander hi menege krta h box ko badne nhi deta */
+                transition: border-color 0.3s ease;
+            }
+            #form-container input [type="text"]:focus{   /* Esse fucus hone pr color change ho jayega */
+                border-color: #007bff;
+            }
+            #form-container button{
+                width: 100%;
+                padding: 10px;
+                border: none;
+                border-radius: 4px;
+                background-color: purple;
+                color: #fff;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                
+            }
+            #form-container button:hover{
+                background-color: lightslategray;
+            }
+        </style>
+</head>
+
+<body>
+    <section id="deshboard">
+        <div id="icons">
+            <a href="#"><i id="icon1" class="fa-solid fa-user-tie"></i></a>
+            <a href="#"><i id="icon2" class="fa-solid fa-gear"></i></a>
+            <a href="#"><img id="img" src="./WhatsApp Image 2024-06-11 at 08.46.11_d4f63f74.jpg" width="50px" height="50px"></a>
+            <h3>Profile.</h3>
+        </div>
+        <div id="desh">
+            <ul id="Logo">
+                <li><img src="./ab26d80c8ad3a107eaf53b11b9fd9797-removebg-preview (1).png" width="150px" height="100px"
+                        alt=" ">
+            </ul>
+            <div id="desh_l">
+
+                <ul id="words">
+                    <li><i class="fa-solid fa-braille"></i>
+                        <a href="index.html">Dashboard</a></li>
+                    <li><i class="fa-solid fa-store"></i></i>
+                        <a href="insert.html">Add_Employee</a></li>
+                    <li><i class="fa-solid fa-list"></i></i>
+                        <a href="./display.html">Display_Data</a></li>
+                    <li><i class="fa-solid fa-chart-simple"></i></i>
+                        <a href="./update.html">Update_Data</a></li>
+                    <li><i class="fa-solid fa-cubes-stacked"></i></i>
+                        <a href="#">Stock</a></li>
+                    <li><i class="fa-solid fa-book-bookmark"></i>
+                        <a href="#">Total_Order</a></li>
+                    <li><i class="fa-solid fa-people-group"></i></i>
+                        <a href="#">Team</a></li>
+                    <li><i class="fa-solid fa-message"></i>
+                        <a href="#">Messages</a></li>
+                    <li><i class="fa-solid fa-heart"></i>
+                        <a href="#">Favrorites</a></li>
+                    <li><i class="fa-solid fa-gear"></i>
+                        <a href="#">Setting</a></li>
+                </ul>
+            </div>
+            <!-- ============================= LogOut ============================== -->
+            <ul id="log">
+                <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="#">LogOut</a></li>
+            </ul>
+        </div>
+        <section id="des" style="display: block;">
+        <section style="display: flex;">
+        <!-- ================================== Bar(Deshboard) ============================== -->
+        <div id="bar">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+            <a>Dashboard</a>
+        </div>
+
+        <!-- ================================ Search Section ============================== -->
+        <div id="search_profile">
+            <div>
+                <input type="search" placeholder="Search">
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+
+        </div>
+        </section>
+        <section>
+            <div id="form-container">
+                <h2>Enter Details</h2>
+                <label for="eno">Enter Employeeno.:</label>
+                <input type="text" id="eno"/>
+    
+                <label for="nm">Enter Name:</label>
+                <input type="text" id="nm"/>
+    
+                <label for="city">Enter City:</label>
+                <input type="text" id="city"/>
+    
+                <label for="salary">Enter Salary</label>
+                <input type="text" id="salary"/>
+    
+                <button id="btn1">Data Save</button>
+    
+            </div>
+        </section>
+    </section>
+    </section>
+
+    <script src="js/insert.js"></script>
+</body>
+
+</html>

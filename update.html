@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <style>  
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f9;
+      }
+
+      table {
+        width: 100%;
+        margin: 40px;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      table th,
+      table td {
+        padding: 15px;
+        text-align: left;
+      }
+      table th {
+        background-color: purple;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+
+      table tr {
+        border-bottom: 1px solid #dddddd;
+      }
+
+      table tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+      }
+
+      table tr:last-of-type {
+        border-bottom: 2px solid #009879;
+      }
+
+      table tr:hover {
+        background-color: #f1f1f1;
+      }
+
+      input[type="text"] {
+        width: 90%;
+        padding: 8px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+      }
+
+      input[type="text"]:focus {
+        border-color: #009879;
+        outline: none;
+      }
+
+      .button {
+        border: none;
+        padding: 10px 15px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      .button-edit {
+        background-color: #4caf50; /* Green */
+      }
+
+      .button-save {
+        background-color: #008cba; /* Blue */
+        display: none;
+      }
+
+      .button-delete {
+        background-color: #f44336; /* Red */
+      }
+    </style> 
+</head>
+<body>
+    <section id="deshboard">
+      <div id="icons">
+        <a href="#"><i id="icon1" class="fa-solid fa-user-tie"></i></a>
+        <a href="#"><i id="icon2" class="fa-solid fa-gear"></i></a>
+        <a href="#"><img id="img" src="./WhatsApp Image 2024-06-11 at 08.46.11_d4f63f74.jpg" width="50px" height="50px"></a>
+        <h3>Profile.</h3>
+      </div>
+        <div id="desh">
+            <ul id="Logo">
+                <li><img src="./ab26d80c8ad3a107eaf53b11b9fd9797-removebg-preview (1).png" width="150px" height="100px"
+                        alt=" ">
+            </ul>
+            <div id="desh_l">
+
+                <ul id="words">
+                    <li><i class="fa-solid fa-braille"></i>
+                        <a href="index.html">Dashboard</a></li>
+                    <li><i class="fa-solid fa-store"></i></i>
+                        <a href="insert.html">Add_Employee</a></li>
+                    <li><i class="fa-solid fa-list"></i></i>
+                        <a href="./display.html">Display_Data</a></li>
+                    <li><i class="fa-solid fa-chart-simple"></i></i>
+                        <a href="./update.html">Update_Data</a></li>
+                    <li><i class="fa-solid fa-cubes-stacked"></i></i>
+                        <a href="#">Stock</a></li>
+                    <li><i class="fa-solid fa-book-bookmark"></i>
+                        <a href="#">Total_Order</a></li>
+                    <li><i class="fa-solid fa-people-group"></i></i>
+                        <a href="#">Team</a></li>
+                    <li><i class="fa-solid fa-message"></i>
+                        <a href="#">Messages</a></li>
+                    <li><i class="fa-solid fa-heart"></i>
+                        <a href="#">Favrorites</a></li>
+                    <li><i class="fa-solid fa-gear"></i>
+                        <a href="#">Setting</a></li>
+                </ul>
+            </div>
+            <!-- ============================= LogOut ============================== -->
+            <ul id="log">
+                <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="#">LogOut</a></li>
+            </ul>
+        </div>
+        <section id="nav-and-hero">
+        <div id="nav">
+        <!-- ================================== Bar(Deshboard) ============================== -->
+        <div id="bar">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+            <a>Dashboard</a>
+        </div>
+
+        <!-- ================================ Search Section ============================== -->
+        <div id="search_profile">
+            <div>
+                <input type="search" placeholder="Search">
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </div>
+        </div>
+        <div id="hero">
+        <div id="demo"></div>
+        </div>
+      </section>
+
+    </section>
+</body>
+<script src="./js/update.js"></script>
+</html>
